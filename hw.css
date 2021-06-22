@@ -1,0 +1,89 @@
+body,h1,h2,h3,h4,h5,p{margin: 0;}
+a{text-decoration: none; color:#000}
+img{vertical-align: top;}
+*{box-sizing: border-box;}
+
+header{
+    padding:20px 0;
+    width: 1140px;
+    margin:0 auto;
+}
+header div{
+    
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+header > div > h1{
+   
+}
+header > div > nav{
+    
+    justify-content: right;
+}
+header > div > nav > a{
+    text-transform: uppercase;
+    margin:0 20px;
+    display:inline-block;
+}
+
+header > div > nav > a::after{
+    display:block;
+    content:'';
+    border-bottom: 2px solid #555;
+    width:0px; margin:0 auto;
+    transition: 0.5s ;
+}
+
+header > div > nav > a:hover::after{
+    width:100%;
+}
+
+
+
+main{
+    width:1140px;
+    margin:0 auto;
+    padding:40px 0;
+}
+
+.content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding:20px 0;}
+
+
+.info{width:40%;
+    justify-content: left;
+}
+.info > h2{
+    padding:20px 0;
+}
+.info > p{
+    padding:20px 0;
+}
+    .info > a{
+        padding:20px 0 0 0;
+    border-bottom: 2px solid #555;
+}   
+.image{width:50%;}
+
+.image img{width:100%;}
+
+
+footer{
+    height: 70px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+footer > p{
+    padding: 30px;
+    font-size: 10px;
+}
